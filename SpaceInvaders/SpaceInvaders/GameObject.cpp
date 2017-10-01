@@ -21,20 +21,3 @@ void GameObject::update()
 }
 
 //Template method for getting a component of the specified type
-template <class Type>
-Type* GameObject::getComponent()
-{
-    Type * result = NULL;
-    int first = 0;
-    bool searching = true;
-    while (searching)
-    {
-        GameComponent * component = components.at(first);
-        if (Type * comp = dynamic_cast<Type * >(component))
-        {
-            result = comp;
-        }
-        first++;
-    }
-    return result;
-}

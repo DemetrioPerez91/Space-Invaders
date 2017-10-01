@@ -23,7 +23,7 @@ void GameManagerComponent::setup()
     {
         enemies.push_back(new EnemyObject(i*50,60));
     }
-    
+    bullet->getComponent<SpriteComponent>()->changeDimensions(10 , 30);
    
 }
 

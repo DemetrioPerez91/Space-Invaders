@@ -11,8 +11,10 @@
 
 #include <stdio.h>
 #include <vector>
+
 #include "GameComponent.h"
 #include "PositionInterface.hpp"
+
 class GameObject
 {
 public:
@@ -26,8 +28,23 @@ public:
     bool active = false;
     
     template<class Type>
-    Type * getComponent();
-    
+    Type* getComponent()
+    {
+        Type * result = NULL;
+        int first = 0;
+        bool searching = true;
+        while (searching)
+        {
+            GameComponent * component = components.at(first);
+            if (Type * comp = dynamic_cast<Type * >(component))
+            {
+                result = comp;
+                searching = false;
+            }
+            first++;
+        }
+        return result;
+    }
     
 };
 #endif /* GameObject_hpp */
