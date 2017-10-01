@@ -18,7 +18,7 @@ class GameObject
 public:
     GameObject(){}
     virtual ~GameObject(){}
-    void update();
+    virtual void update();
     float x = 0.0f;
     float y = 0.0f;
     std::vector<GameComponent*> components;
