@@ -24,6 +24,7 @@
 		CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4BC1F8092C3002F2ABD /* InputManager.cpp */; };
 		CEF3C4C21F809CDB002F2ABD /* HeroBehaviorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */; };
 		CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C41F80A6C8002F2ABD /* HeroObject.cpp */; };
+		CEF3C4CB1F80AEC4002F2ABD /* EnemyObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C91F80AEC4002F2ABD /* EnemyObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +78,8 @@
 		CEF3C4C11F809CDB002F2ABD /* HeroBehaviorComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeroBehaviorComponent.hpp; sourceTree = "<group>"; };
 		CEF3C4C41F80A6C8002F2ABD /* HeroObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroObject.cpp; sourceTree = "<group>"; };
 		CEF3C4C51F80A6C8002F2ABD /* HeroObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeroObject.hpp; sourceTree = "<group>"; };
+		CEF3C4C91F80AEC4002F2ABD /* EnemyObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyObject.cpp; sourceTree = "<group>"; };
+		CEF3C4CA1F80AEC4002F2ABD /* EnemyObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemyObject.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +117,10 @@
 		CE1B2E7A1F7F3BA5007A91B3 /* SpaceInvaders */ = {
 			isa = PBXGroup;
 			children = (
-				CE1B2E921F7F3D5A007A91B3 /* img */,
 				CE1B2E8B1F7F3C68007A91B3 /* defines.h */,
 				CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */,
-				CEF3C4BB1F8081D4002F2ABD /* PositionInterface */,
+				CE1B2E921F7F3D5A007A91B3 /* img */,
+				CEF3C4C81F80AE8D002F2ABD /* Interfaces */,
 				CE1B2EBB1F8033C4007A91B3 /* Managers */,
 				CE1B2EAA1F8024A3007A91B3 /* GameObjects */,
 				CE1B2EA91F802490007A91B3 /* GameComponents */,
@@ -168,6 +171,7 @@
 				CE1B2EAD1F80260D007A91B3 /* GameObject */,
 				CE1B2EAC1F8025CE007A91B3 /* Matt */,
 				CEF3C4C71F80A6CD002F2ABD /* HeroObbject */,
+				CEF3C4CC1F80AF13002F2ABD /* EnemyObject */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -290,6 +294,23 @@
 			name = HeroObbject;
 			sourceTree = "<group>";
 		};
+		CEF3C4C81F80AE8D002F2ABD /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4BB1F8081D4002F2ABD /* PositionInterface */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEF3C4CC1F80AF13002F2ABD /* EnemyObject */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4C91F80AEC4002F2ABD /* EnemyObject.cpp */,
+				CEF3C4CA1F80AEC4002F2ABD /* EnemyObject.hpp */,
+			);
+			name = EnemyObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +380,7 @@
 				CE1B2EB11F802C1B007A91B3 /* SpriteComponent.cpp in Sources */,
 				CE1B2EB41F802EF5007A91B3 /* GameManagerComponent.cpp in Sources */,
 				CE1B2EA21F801C66007A91B3 /* MessageComponent.cpp in Sources */,
+				CEF3C4CB1F80AEC4002F2ABD /* EnemyObject.cpp in Sources */,
 				CEF3C4B61F807D53002F2ABD /* TransformComponent.cpp in Sources */,
 				CEF3C4C21F809CDB002F2ABD /* HeroBehaviorComponent.cpp in Sources */,
 			);
