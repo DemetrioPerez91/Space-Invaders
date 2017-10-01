@@ -12,8 +12,6 @@
 		CE1B2E861F7F3C31007A91B3 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E851F7F3C31007A91B3 /* libSDL2_image-2.0.0.dylib */; };
 		CE1B2E881F7F3C42007A91B3 /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E871F7F3C42007A91B3 /* libSDL2_mixer-2.0.0.dylib */; };
 		CE1B2E8A1F7F3C53007A91B3 /* libSDL2_ttf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E891F7F3C53007A91B3 /* libSDL2_ttf-2.0.0.dylib */; };
-		CE1B2E8E1F7F3CC0007A91B3 /* hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E8D1F7F3CC0007A91B3 /* hero.cpp */; };
-		CE1B2E911F7F3CC9007A91B3 /* element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E901F7F3CC9007A91B3 /* element.cpp */; };
 		CE1B2E9C1F801A3A007A91B3 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E9B1F801A3A007A91B3 /* GameComponent.cpp */; };
 		CE1B2E9F1F801ACB007A91B3 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E9D1F801ACB007A91B3 /* GameObject.cpp */; };
 		CE1B2EA21F801C66007A91B3 /* MessageComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EA01F801C66007A91B3 /* MessageComponent.cpp */; };
@@ -23,6 +21,9 @@
 		CE1B2EB91F8031C0007A91B3 /* SDLManagerComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EB71F8031C0007A91B3 /* SDLManagerComponent.cpp */; };
 		CEF3C4B61F807D53002F2ABD /* TransformComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4B41F807D53002F2ABD /* TransformComponent.cpp */; };
 		CEF3C4BA1F8081C1002F2ABD /* PositionInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4B81F8081C1002F2ABD /* PositionInterface.cpp */; };
+		CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4BC1F8092C3002F2ABD /* InputManager.cpp */; };
+		CEF3C4C21F809CDB002F2ABD /* HeroBehaviorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */; };
+		CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C41F80A6C8002F2ABD /* HeroObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,10 +46,6 @@
 		CE1B2E871F7F3C42007A91B3 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2_mixer/2.0.1_1/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
 		CE1B2E891F7F3C53007A91B3 /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2_ttf/2.0.14/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
 		CE1B2E8B1F7F3C68007A91B3 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
-		CE1B2E8C1F7F3CC0007A91B3 /* hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hero.h; sourceTree = "<group>"; };
-		CE1B2E8D1F7F3CC0007A91B3 /* hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hero.cpp; sourceTree = "<group>"; };
-		CE1B2E8F1F7F3CC9007A91B3 /* element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = element.h; sourceTree = "<group>"; };
-		CE1B2E901F7F3CC9007A91B3 /* element.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = element.cpp; sourceTree = "<group>"; };
 		CE1B2E931F7F3D5A007A91B3 /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
 		CE1B2E941F7F3D5A007A91B3 /* alien2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien2.png; sourceTree = "<group>"; };
 		CE1B2E951F7F3D5A007A91B3 /* arwing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arwing.png; sourceTree = "<group>"; };
@@ -74,6 +71,12 @@
 		CEF3C4B51F807D53002F2ABD /* TransformComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransformComponent.hpp; sourceTree = "<group>"; };
 		CEF3C4B81F8081C1002F2ABD /* PositionInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PositionInterface.cpp; sourceTree = "<group>"; };
 		CEF3C4B91F8081C1002F2ABD /* PositionInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PositionInterface.hpp; sourceTree = "<group>"; };
+		CEF3C4BC1F8092C3002F2ABD /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		CEF3C4BD1F8092C3002F2ABD /* InputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
+		CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroBehaviorComponent.cpp; sourceTree = "<group>"; };
+		CEF3C4C11F809CDB002F2ABD /* HeroBehaviorComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeroBehaviorComponent.hpp; sourceTree = "<group>"; };
+		CEF3C4C41F80A6C8002F2ABD /* HeroObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroObject.cpp; sourceTree = "<group>"; };
+		CEF3C4C51F80A6C8002F2ABD /* HeroObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeroObject.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +121,6 @@
 				CE1B2EBB1F8033C4007A91B3 /* Managers */,
 				CE1B2EAA1F8024A3007A91B3 /* GameObjects */,
 				CE1B2EA91F802490007A91B3 /* GameComponents */,
-				CE1B2E8C1F7F3CC0007A91B3 /* hero.h */,
-				CE1B2E8D1F7F3CC0007A91B3 /* hero.cpp */,
-				CE1B2E8F1F7F3CC9007A91B3 /* element.h */,
-				CE1B2E901F7F3CC9007A91B3 /* element.cpp */,
 			);
 			path = SpaceInvaders;
 			sourceTree = "<group>";
@@ -158,6 +157,7 @@
 				CE1B2EAB1F8024AB007A91B3 /* MessageComponent */,
 				CE1B2EB61F802F0A007A91B3 /* SpriteComponent */,
 				CEF3C4B71F807D59002F2ABD /* TransformComponent */,
+				CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */,
 			);
 			name = GameComponents;
 			sourceTree = "<group>";
@@ -167,6 +167,7 @@
 			children = (
 				CE1B2EAD1F80260D007A91B3 /* GameObject */,
 				CE1B2EAC1F8025CE007A91B3 /* Matt */,
+				CEF3C4C71F80A6CD002F2ABD /* HeroObbject */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -239,6 +240,7 @@
 			children = (
 				CE1B2EB51F802EFA007A91B3 /* GameManagerComponent */,
 				CE1B2EBA1F8031D6007A91B3 /* SDLManagerCOmponent */,
+				CEF3C4BF1F80945A002F2ABD /* InputManager */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -259,6 +261,33 @@
 				CEF3C4B91F8081C1002F2ABD /* PositionInterface.hpp */,
 			);
 			name = PositionInterface;
+			sourceTree = "<group>";
+		};
+		CEF3C4BF1F80945A002F2ABD /* InputManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4BC1F8092C3002F2ABD /* InputManager.cpp */,
+				CEF3C4BD1F8092C3002F2ABD /* InputManager.hpp */,
+			);
+			name = InputManager;
+			sourceTree = "<group>";
+		};
+		CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */,
+				CEF3C4C11F809CDB002F2ABD /* HeroBehaviorComponent.hpp */,
+			);
+			name = HeroBehaviorComponent;
+			sourceTree = "<group>";
+		};
+		CEF3C4C71F80A6CD002F2ABD /* HeroObbject */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4C41F80A6C8002F2ABD /* HeroObject.cpp */,
+				CEF3C4C51F80A6C8002F2ABD /* HeroObject.hpp */,
+			);
+			name = HeroObbject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,17 +349,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1B2EA51F801D77007A91B3 /* Matt.cpp in Sources */,
+				CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */,
+				CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */,
 				CE1B2EB91F8031C0007A91B3 /* SDLManagerComponent.cpp in Sources */,
 				CE1B2E7C1F7F3BA5007A91B3 /* main.cpp in Sources */,
-				CE1B2E911F7F3CC9007A91B3 /* element.cpp in Sources */,
 				CEF3C4BA1F8081C1002F2ABD /* PositionInterface.cpp in Sources */,
-				CE1B2E8E1F7F3CC0007A91B3 /* hero.cpp in Sources */,
 				CE1B2E9C1F801A3A007A91B3 /* GameComponent.cpp in Sources */,
 				CE1B2E9F1F801ACB007A91B3 /* GameObject.cpp in Sources */,
 				CE1B2EB11F802C1B007A91B3 /* SpriteComponent.cpp in Sources */,
 				CE1B2EB41F802EF5007A91B3 /* GameManagerComponent.cpp in Sources */,
 				CE1B2EA21F801C66007A91B3 /* MessageComponent.cpp in Sources */,
 				CEF3C4B61F807D53002F2ABD /* TransformComponent.cpp in Sources */,
+				CEF3C4C21F809CDB002F2ABD /* HeroBehaviorComponent.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
