@@ -20,9 +20,7 @@ void GameManagerComponent::setup()
     hero    = new HeroObject(400,350);
     for(int i = 0; i<10; i++)
     {
-        enemies.push_back(new EnemyObject());
-        EnemyObject * enemy = enemies.back();
-        enemy->x = i * 50;
+        enemies.push_back(new EnemyObject(i*50,60));
     }
    
 }
