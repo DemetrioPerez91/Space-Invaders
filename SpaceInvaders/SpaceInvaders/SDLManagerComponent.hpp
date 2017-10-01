@@ -31,6 +31,8 @@ public:
     static void clear();
     static void present();
     static void addTexture(SDL_Texture * texture,SDL_Rect * srcRect,SDL_Rect * destRect);
+    static SDL_Texture * loadTexture( std::string path );
+
     
     
     //Initializaiton Methods
