@@ -25,6 +25,7 @@
 		CEF3C4C21F809CDB002F2ABD /* HeroBehaviorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */; };
 		CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C41F80A6C8002F2ABD /* HeroObject.cpp */; };
 		CEF3C4CB1F80AEC4002F2ABD /* EnemyObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C91F80AEC4002F2ABD /* EnemyObject.cpp */; };
+		CEF3C4CF1F80B6BF002F2ABD /* BackgroundObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4CD1F80B6BF002F2ABD /* BackgroundObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +81,8 @@
 		CEF3C4C51F80A6C8002F2ABD /* HeroObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeroObject.hpp; sourceTree = "<group>"; };
 		CEF3C4C91F80AEC4002F2ABD /* EnemyObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyObject.cpp; sourceTree = "<group>"; };
 		CEF3C4CA1F80AEC4002F2ABD /* EnemyObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemyObject.hpp; sourceTree = "<group>"; };
+		CEF3C4CD1F80B6BF002F2ABD /* BackgroundObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundObject.cpp; sourceTree = "<group>"; };
+		CEF3C4CE1F80B6BF002F2ABD /* BackgroundObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BackgroundObject.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,7 @@
 				CE1B2EAC1F8025CE007A91B3 /* Matt */,
 				CEF3C4C71F80A6CD002F2ABD /* HeroObbject */,
 				CEF3C4CC1F80AF13002F2ABD /* EnemyObject */,
+				CEF3C4D01F80B6CE002F2ABD /* BackgroundObject */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -311,6 +315,15 @@
 			name = EnemyObject;
 			sourceTree = "<group>";
 		};
+		CEF3C4D01F80B6CE002F2ABD /* BackgroundObject */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4CD1F80B6BF002F2ABD /* BackgroundObject.cpp */,
+				CEF3C4CE1F80B6BF002F2ABD /* BackgroundObject.hpp */,
+			);
+			name = BackgroundObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +386,7 @@
 				CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */,
 				CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */,
 				CE1B2EB91F8031C0007A91B3 /* SDLManagerComponent.cpp in Sources */,
+				CEF3C4CF1F80B6BF002F2ABD /* BackgroundObject.cpp in Sources */,
 				CE1B2E7C1F7F3BA5007A91B3 /* main.cpp in Sources */,
 				CEF3C4BA1F8081C1002F2ABD /* PositionInterface.cpp in Sources */,
 				CE1B2E9C1F801A3A007A91B3 /* GameComponent.cpp in Sources */,

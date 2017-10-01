@@ -7,6 +7,9 @@
 #include "InputManager.hpp"
 #include "HeroObject.hpp"
 #include "EnemyObject.hpp"
+#include "BackgroundObject.cpp"
+
+
 using namespace std;
 
 bool testing = true;
@@ -30,11 +33,9 @@ int test()
 {
     SDLManagerComponent::start();
     
-    GameObject * test = new GameObject();
+    BackgroundObject * test = new BackgroundObject();
     HeroObject * test2 = new HeroObject();
     EnemyObject * test3 = new EnemyObject();
-    
-    test->components.push_back(new SpriteComponent("img/bg.png",700,700));
     
     
     
