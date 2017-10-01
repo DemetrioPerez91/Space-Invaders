@@ -15,13 +15,6 @@ void GameObject::update()
     while (first != last)
     {
         GameComponent * component = components.at(first);
-        if( PositionInterface * positionComponent = dynamic_cast< PositionInterface* >( component) )
-        {
-            positionComponent->updatePostion(x, y);
-            auto t = positionComponent->getPosition();
-            this->x = std::get<0>(t);
-            this->y = std::get<1>(t);
-        }
         component->update();
         first++;
     }
