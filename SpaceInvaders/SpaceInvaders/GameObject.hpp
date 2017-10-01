@@ -24,5 +24,10 @@ public:
     std::string tag = "";
     std::vector<GameComponent*> components;
     bool active = false;
+    
+    template<class Type>
+    Type * getComponent();
+    
+    
 };
 #endif /* GameObject_hpp */
