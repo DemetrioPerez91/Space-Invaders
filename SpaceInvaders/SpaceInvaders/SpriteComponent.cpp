@@ -23,7 +23,6 @@ void SpriteComponent::start()
 
 void SpriteComponent::update()
 {
-    printf("SRPITE COMPONENT\n");
     updateDest();
     SDLManagerComponent::addTexture(textTure, src, dest);
 }
