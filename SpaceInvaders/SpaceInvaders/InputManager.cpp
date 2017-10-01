@@ -39,6 +39,7 @@ void InputManager::update()
                     break;
                 case SDLK_UP:
                 case SDLK_w:
+                    controller.forward = true;
                     break;
                 case SDLK_DOWN:
                 case SDLK_s:
@@ -46,9 +47,11 @@ void InputManager::update()
                     break;
                 case SDLK_LEFT:
                 case SDLK_a:
+                    controller.left = true;
                     break;
                 case SDLK_RIGHT:
                 case SDLK_d:
+                    controller.right = true;
                     break;
                 case SDLK_SPACE:
                     break;
@@ -57,13 +60,46 @@ void InputManager::update()
                 default:
                     break;
             }
-                break; 
+                break;
+            case SDL_KEYUP:
+                switch (e.key.keysym.sym)
+            {
+                case SDLK_RETURN:
+                    break;
+                case SDLK_2:
+                    break;
+                case SDLK_1:
+                    break;
+                case SDLK_UP:
+                case SDLK_w:
+                    controller.forward = false;
+                    break;
+                case SDLK_DOWN:
+                case SDLK_s:
+                    controller.back = false;
+                    break;
+                case SDLK_LEFT:
+                case SDLK_a:
+                    controller.left = false;
+                    break;
+                case SDLK_RIGHT:
+                case SDLK_d:
+                    controller.right = false;
+                    break;
+                case SDLK_SPACE:
+                    break;
+                case SDLK_m:
+                    break;
+                default:
+                    break;
+            }
+                break;
             case SDL_MOUSEBUTTONDOWN:
                 break;
             case SDL_MOUSEBUTTONUP:
                 break;
             default:
-                controller.back = false;
+                
                 break;
         }
     }
