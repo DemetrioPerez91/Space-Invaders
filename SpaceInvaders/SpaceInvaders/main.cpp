@@ -1,14 +1,11 @@
 #include <iostream>
-#include "defines.h"
-#include "hero.h"
-#include "element.h"
-#include "defines.h"
 #include <vector>
 
-#include "Matt.hpp"
+#include "GameObject.hpp"
 #include "SDLManagerComponent.hpp"
 #include "SpriteComponent.hpp"
 #include "MessageComponent.hpp"
+#include "InputManager.hpp"
 
 using namespace std;
 
@@ -34,15 +31,18 @@ int test()
     SDLManagerComponent::start();
     
     GameObject * test = new GameObject();
+    GameObject * test2 = new GameObject();
     
-    float x = 0.0;
-    test->components.push_back(new SpriteComponent("img/arwing.png",55,39));
+    
     while (true)
     {
+        InputManager::update();
         
         SDLManagerComponent::clear();
-        test->update();
+        
+       
         SDLManagerComponent::present();
+        printf("%d\n",InputManager::controller.back);
     }
     return 0;
 }
