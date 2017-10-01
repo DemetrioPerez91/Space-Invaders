@@ -17,12 +17,18 @@
 class HeroBehaviorComponent: public GameComponent, public PositionInterface
 {
 public:
-    HeroBehaviorComponent()
+    HeroBehaviorComponent(int x, int y)
     {
+        startX = x;
+        startY = y;
+        start();
     }
-    void start(){}
+    void start();
     void update();
     int speed = 10;
+    float startX;
+    float startY;
+    
 };
 
 
