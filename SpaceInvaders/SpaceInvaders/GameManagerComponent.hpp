@@ -10,7 +10,23 @@
 #define GameManagerComponent_hpp
 
 #include <stdio.h>
+#include <vector>
 
-#include "GameComponent.h"
+#include "GameObject.hpp"
+#include "SpriteComponent.hpp"
+#include "InputManager.hpp"
+#include "HeroObject.hpp"
+#include "EnemyObject.hpp"
+#include "BackgroundObject.cpp"
 
+class GameManagerComponent
+{
+public:
+    static std::vector<EnemyObject*>  enemies;
+    static bool gameOver;
+    static BackgroundObject * bg;
+    static HeroObject * hero;
+    static void setup();
+    static void update();
+};
 #endif /* GameManagerComponent_hpp */
