@@ -16,6 +16,7 @@
 #include "SpriteComponent.hpp"
 #include "HeroObject.hpp"
 #include "InputManager.hpp"
+#include "BulletObject.hpp"
 
 #include "EnemyObject.hpp"
 #include "BackgroundObject.cpp"
@@ -27,6 +28,8 @@ public:
     static bool gameOver;
     static BackgroundObject * bg;
     static HeroObject * hero;
+    static BulletObject * bullet;
+    
     static void setup();
     static void update();
 };
