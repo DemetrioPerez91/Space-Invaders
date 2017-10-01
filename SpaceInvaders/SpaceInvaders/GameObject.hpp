@@ -21,6 +21,7 @@ public:
     virtual void update();
     float x = 0.0f;
     float y = 0.0f;
+    std::string tag = "";
     std::vector<GameComponent*> components;
     bool active = false;
 };
