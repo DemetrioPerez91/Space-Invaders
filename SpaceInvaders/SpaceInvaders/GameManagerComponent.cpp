@@ -23,11 +23,6 @@ void GameManagerComponent::setup()
         enemies.push_back(new EnemyObject());
         EnemyObject * enemy = enemies.back();
         enemy->x = i * 50;
-        SpriteComponent * comp = dynamic_cast<SpriteComponent *>(enemy->components.at(0));
-        comp->changeDimensions(50, 60);
-        
-        
-        
     }
    
 }
