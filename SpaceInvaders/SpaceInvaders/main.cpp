@@ -6,7 +6,7 @@
 #include "SpriteComponent.hpp"
 #include "InputManager.hpp"
 #include "HeroObject.hpp"
-
+#include "EnemyObject.hpp"
 using namespace std;
 
 bool testing = true;
@@ -32,9 +32,11 @@ int test()
     
     GameObject * test = new GameObject();
     HeroObject * test2 = new HeroObject();
+    EnemyObject * test3 = new EnemyObject();
     
     test->components.push_back(new SpriteComponent("img/bg.png",700,700));
-    test2->components.push_back(new HeroBehaviorComponent());
+    
+    
     
     while (true)
     {
@@ -42,9 +44,8 @@ int test()
         SDLManagerComponent::clear();
         test->update();
         test2->update();
+        test3->update();
         SDLManagerComponent::present();
-        
-        
         
     }
     return 0;
