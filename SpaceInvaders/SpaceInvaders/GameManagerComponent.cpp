@@ -17,11 +17,16 @@ HeroObject * GameManagerComponent::hero = NULL;
 void GameManagerComponent::setup()
 {
     bg      = new BackgroundObject();
-    hero    = new HeroObject(350,350);
+    hero    = new HeroObject(400,350);
     for(int i = 0; i<10; i++)
     {
         enemies.push_back(new EnemyObject());
-        enemies.back()->x = i * 50;
+        EnemyObject * enemy = enemies.back();
+        enemy->x = i * 50;
+        SpriteComponent * comp = dynamic_cast<SpriteComponent *>(enemy->components.at(0));
+        comp->changeDimensions(50, 60);
+        
+        
         
     }
    

@@ -15,6 +15,8 @@ void SpriteComponent::start()
     src = new SDL_Rect();
     src->h = height;
     src->w = width;
+    dest->h = height;
+    dest->w = width;
     src->x = 0;
     src->y = 0;
     textTure = SDLManagerComponent::loadTexture(resourceURL);
@@ -29,8 +31,20 @@ void SpriteComponent::update()
 
 void SpriteComponent::updateDest()
 {
-    dest->h = height;
-    dest->w = width;
+    
     dest->x = x;
     dest->y = y;
+}
+
+
+void SpriteComponent::changeDimensions(int  w , int  h)
+{
+    if (w != -1)
+    {
+        dest->w = w;
+    }
+    if (h != -1)
+    {
+        dest->h = h;
+    }
 }

@@ -32,6 +32,7 @@ public:
     SDL_Renderer * renderer = NULL;
     void start();
     void update();
+    void changeDimensions(int  w, int h);
     void updateDest();
     
 };
