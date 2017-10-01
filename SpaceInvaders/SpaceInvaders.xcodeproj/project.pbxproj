@@ -27,6 +27,7 @@
 		CEF3C4CB1F80AEC4002F2ABD /* EnemyObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4C91F80AEC4002F2ABD /* EnemyObject.cpp */; };
 		CEF3C4CF1F80B6BF002F2ABD /* BackgroundObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4CD1F80B6BF002F2ABD /* BackgroundObject.cpp */; };
 		CEF3C4D31F812A9C002F2ABD /* EnemyBehaviorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4D11F812A9C002F2ABD /* EnemyBehaviorComponent.cpp */; };
+		CEF3C4D81F814A3F002F2ABD /* BulletObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4D61F814A3F002F2ABD /* BulletObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,9 @@
 		CEF3C4CE1F80B6BF002F2ABD /* BackgroundObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BackgroundObject.hpp; sourceTree = "<group>"; };
 		CEF3C4D11F812A9C002F2ABD /* EnemyBehaviorComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyBehaviorComponent.cpp; sourceTree = "<group>"; };
 		CEF3C4D21F812A9C002F2ABD /* EnemyBehaviorComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemyBehaviorComponent.hpp; sourceTree = "<group>"; };
+		CEF3C4D51F814A1E002F2ABD /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
+		CEF3C4D61F814A3F002F2ABD /* BulletObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletObject.cpp; sourceTree = "<group>"; };
+		CEF3C4D71F814A3F002F2ABD /* BulletObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BulletObject.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		CE1B2E921F7F3D5A007A91B3 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				CEF3C4D51F814A1E002F2ABD /* laser.png */,
 				CE1B2E931F7F3D5A007A91B3 /* alien.png */,
 				CE1B2E941F7F3D5A007A91B3 /* alien2.png */,
 				CE1B2E951F7F3D5A007A91B3 /* arwing.png */,
@@ -180,6 +185,7 @@
 				CEF3C4C71F80A6CD002F2ABD /* HeroObbject */,
 				CEF3C4CC1F80AF13002F2ABD /* EnemyObject */,
 				CEF3C4D01F80B6CE002F2ABD /* BackgroundObject */,
+				CEF3C4D91F814A46002F2ABD /* BulletObject */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -337,6 +343,15 @@
 			name = EnemyBehaviorComponent;
 			sourceTree = "<group>";
 		};
+		CEF3C4D91F814A46002F2ABD /* BulletObject */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4D61F814A3F002F2ABD /* BulletObject.cpp */,
+				CEF3C4D71F814A3F002F2ABD /* BulletObject.hpp */,
+			);
+			name = BulletObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +413,7 @@
 				CE1B2EA51F801D77007A91B3 /* Matt.cpp in Sources */,
 				CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */,
 				CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */,
+				CEF3C4D81F814A3F002F2ABD /* BulletObject.cpp in Sources */,
 				CE1B2EB91F8031C0007A91B3 /* SDLManagerComponent.cpp in Sources */,
 				CEF3C4CF1F80B6BF002F2ABD /* BackgroundObject.cpp in Sources */,
 				CE1B2E7C1F7F3BA5007A91B3 /* main.cpp in Sources */,
