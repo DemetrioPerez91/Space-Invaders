@@ -7,6 +7,7 @@
 //
 
 #include "InputManager.hpp"
+#include "GameManagerComponent.hpp"
 SDL_Event e;
 Controller InputManager::controller;
 void InputManager::update()
@@ -26,7 +27,7 @@ void InputManager::update()
                 }
                 break;
             case SDL_QUIT:
-                
+                GameManagerComponent::gameOver = true;
                 break;
             case SDL_KEYDOWN:
                 switch (e.key.keysym.sym)

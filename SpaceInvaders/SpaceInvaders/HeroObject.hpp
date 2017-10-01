@@ -16,8 +16,10 @@
 class HeroObject: public GameObject
 {
 public:
-    HeroObject()
+    HeroObject(int x, int y)
     {
+        this->x = x;
+        this->y = y;
         SpriteComponent * sprite = new SpriteComponent("img/arwing.png",55,39);
         HeroBehaviorComponent * heroBehavior = new HeroBehaviorComponent();
         this->components.push_back(sprite);

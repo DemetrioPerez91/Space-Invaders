@@ -5,7 +5,7 @@
 //  Created by User on 9/30/17.
 //  Copyright © 2017 DemetrioPerez. All rights reserved.
 //
-
+#pragma once
 #ifndef GameManagerComponent_hpp
 #define GameManagerComponent_hpp
 
@@ -14,8 +14,9 @@
 
 #include "GameObject.hpp"
 #include "SpriteComponent.hpp"
-#include "InputManager.hpp"
 #include "HeroObject.hpp"
+#include "InputManager.hpp"
+
 #include "EnemyObject.hpp"
 #include "BackgroundObject.cpp"
 

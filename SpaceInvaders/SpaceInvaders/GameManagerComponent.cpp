@@ -13,16 +13,18 @@ bool GameManagerComponent::gameOver = false;
 BackgroundObject * GameManagerComponent::bg = NULL;
 HeroObject * GameManagerComponent::hero = NULL;
 
+
 void GameManagerComponent::setup()
 {
     bg      = new BackgroundObject();
-    hero    = new HeroObject();
+    hero    = new HeroObject(350,350);
     for(int i = 0; i<10; i++)
     {
         enemies.push_back(new EnemyObject());
         enemies.back()->x = i * 50;
         
     }
+   
 }
 
 void GameManagerComponent::update()

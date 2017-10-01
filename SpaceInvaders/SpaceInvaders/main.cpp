@@ -31,7 +31,7 @@ int test()
     GameManagerComponent::setup();
     
     
-    while (true)
+    while (!GameManagerComponent::gameOver)
     {
         SDLManagerComponent::clear();
         InputManager::update();
