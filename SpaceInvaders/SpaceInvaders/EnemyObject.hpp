@@ -12,14 +12,16 @@
 #include <stdio.h>
 #include "GameObject.hpp"
 #include "SpriteComponent.hpp"
-
+#include "EnemyBehaviorComponent.hpp"
 class EnemyObject: public GameObject
 {
 public:
-    EnemyObject()
+    EnemyObject(float x, float y)
     {
         SpriteComponent * sprite = new SpriteComponent("img/alien2.png",34,60);
+        EnemyBehaviorComponent * enemyBehavior = new EnemyBehaviorComponent(x,y);
         this->components.push_back(sprite);
+        this->components.push_back(enemyBehavior);
     }
     void update();
 };

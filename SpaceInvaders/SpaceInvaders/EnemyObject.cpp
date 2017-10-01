@@ -16,10 +16,17 @@ void EnemyObject::update()
     {
         GameComponent * component = components.at(first);
 
+        if (EnemyBehaviorComponent * positionComponent = dynamic_cast< EnemyBehaviorComponent* >( component))
+        {
+            auto t = positionComponent->getPosition();
+            this->x = std::get<0>(t);
+            this->y = std::get<1>(t);
+        }
         if( SpriteComponent * positionComponent = dynamic_cast< SpriteComponent* >( component) )
         {
             positionComponent->updatePostion(x, y);
         }
+        
         component->update();
         first++;
     }
