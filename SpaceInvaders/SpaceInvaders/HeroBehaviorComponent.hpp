@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include "InputManager.hpp"
 #include "GameComponent.h"
-#include "PositionInterface.hpp"
 
 class HeroBehaviorComponent: public GameComponent, public PositionInterface
 {

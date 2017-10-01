@@ -9,6 +9,7 @@
 #ifndef GameComponent_h
 #define GameComponent_h
 #include "defines.h"
+#include "PositionInterface.hpp"
 
 enum ComponentType
 {

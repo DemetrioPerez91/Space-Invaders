@@ -11,7 +11,6 @@
 
 #include <stdio.h>
 #include "GameComponent.h"
-#include "PositionInterface.hpp"
 #include "SDLManagerComponent.hpp"
 
 class SpriteComponent:public GameComponent, public PositionInterface
