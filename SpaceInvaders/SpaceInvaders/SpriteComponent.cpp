@@ -32,8 +32,8 @@ void SpriteComponent::update()
 void SpriteComponent::updateDest()
 {
     
-    dest->x = x;
-    dest->y = y;
+    dest->x = positionX;
+    dest->y = positionY;
 }
 
 

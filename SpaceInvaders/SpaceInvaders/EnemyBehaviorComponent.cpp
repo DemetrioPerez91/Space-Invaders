@@ -10,5 +10,5 @@
 
 void EnemyBehaviorComponent::update()
 {
-    this->x += 1;
+    this->positionX += 1;
 }

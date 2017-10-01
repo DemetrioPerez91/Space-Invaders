@@ -14,10 +14,10 @@ void HeroBehaviorComponent::update()
 {
        if(InputManager::controller.right)
     {
-        this->x+=speed;
+        this->positionX+=speed;
     }
     if(InputManager::controller.left)
     {
-        this->x-=speed;
+        this->positionX-=speed;
     }
 }

@@ -9,17 +9,17 @@
 #include "PositionInterface.hpp"
 void PositionInterface::updatePostion(float x, float y)
 {
-    this->x = x;
-    this->y = y;
+    this->positionX = x;
+    this->positionY = y;
 }
 
 std::tuple<float,float> PositionInterface::getPosition()
 {
-    return {this->x,this->y };
+    return {this->positionX,this->positionY };
 }
 
 void PositionInterface::startPosition(float x,  float y)
 {
-    this->x = x;
-    this->y = y;
+    this->positionX = x;
+    this->positionY = y;
 }

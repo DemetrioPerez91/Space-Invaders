@@ -15,8 +15,8 @@
 class PositionInterface
 {
 public:
-    float x;
-    float y;
+    float positionX;
+    float positionY;
     
     void updatePostion(float x, float y);
     virtual std::tuple<float,float> getPosition();
