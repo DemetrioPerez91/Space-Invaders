@@ -7,3 +7,8 @@
 //
 
 #include "EnemyBehaviorComponent.hpp"
+
+void EnemyBehaviorComponent::update()
+{
+    this->x += 1;
+}

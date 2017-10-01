@@ -15,6 +15,11 @@
 
 class EnemyBehaviorComponent: public GameComponent, public PositionInterface
 {
+public:
+    EnemyBehaviorComponent(float x, float y)
+    {
+        startPosition(x, y);
+    }
     void start(){}
     void update();
 };
