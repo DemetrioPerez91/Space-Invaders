@@ -36,11 +36,10 @@ int test()
     GameObject * test = new GameObject();
     
     float x = 0.0;
-    test->components.push_back(new SpriteComponent());
+    test->components.push_back(new SpriteComponent("img/arwing.png",55,39));
     while (true)
     {
-        x++;
-        test->x = x;
+        
         SDLManagerComponent::clear();
         test->update();
         SDLManagerComponent::present();

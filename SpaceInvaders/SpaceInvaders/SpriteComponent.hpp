@@ -17,7 +17,13 @@
 class SpriteComponent:public GameComponent, public PositionInterface
 {
 public:
-    SpriteComponent(){start();}
+    SpriteComponent(std::string resourceURL,int width, int height){
+        this->resourceURL = resourceURL;
+        this->height = height;
+        this->width = width;
+        start();
+    }
+    std::string resourceURL = "";
     SDL_Rect * dest = NULL;
     SDL_Rect * src = NULL;
     int width;
