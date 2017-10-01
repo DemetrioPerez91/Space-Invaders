@@ -3,61 +3,53 @@
 #include "hero.h"
 #include "element.h"
 #include "defines.h"
+#include <vector>
+
+#include "Matt.hpp"
+#include "SDLManagerComponent.hpp"
+#include "SpriteComponent.hpp"
+#include "MessageComponent.hpp"
+
 using namespace std;
 
-struct StateStruct{
-    int(*statePointer)();
-};
-//SDL INITIALIZATIONS
-SDL_Surface * screen = NULL;
-SDL_Window * window = NULL;
-
-
-
-//METHOD DECLARATIONS
-bool init();
-void shutdown();
-
-
-
-bool init(){
-    bool success =true;
-    if(SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER)<0){
-        printf("SDL ERROR ");
-        success = false;
-    }
-    else{
-        window = SDL_CreateWindow("星人ブラスタ",0,0,SCREEN_H,SCREEN_W,SDL_WINDOW_SHOWN);
-        if(window==NULL){
-            printf("SDL Window error ");
-            success = false;
-        }else{
-            screen = SDL_GetWindowSurface(window);
-            if(screen == NULL){
-                printf("Screen error");
-                success = false;
-            }
-        }
-    }
-    return success;
-}
+bool testing = true;
+int test();
+int start();
 
 int main()
 {
-    if(init()){
-        
-        Hero hero;
-        int i = 0;
-        while(i<50000){
-            hero.renderMe(screen);
-            
-            SDL_UpdateWindowSurface(window);
-            printf(" MY X %i \n",hero.getX());
-            i++;
-            
-        }
-        
+    if (testing)
+    {
+        test();
     }
+    else
+    {
+        start();
+    }
+    return 0;
+}
+
+int test()
+{
+    SDLManagerComponent::start();
     
+    GameObject * test = new GameObject();
+    
+    float x = 0.0;
+    test->components.push_back(new SpriteComponent());
+    test->components.push_back(new MesageComponent("I love you"));
+    while (true)
+    {
+        x++;
+        test->x = x;
+        SDLManagerComponent::clear();
+        test->update();
+        SDLManagerComponent::present();
+    }
+    return 0;
+}
+
+int start()
+{
     return 0;
 }

@@ -3,13 +3,13 @@
 #include<iostream>
 
 //import SDL Libraries
+
+
 #include<SDL2/SDL_ttf.h>
 #include<SDL2/SDL_image.h>
 #include<SDL2/SDL.h>
 #include<SDL2/SDL_test.h>
 #include<SDL2/SDL_timer.h>
-
-
 #define SCREEN_W 800
 #define SCREEN_H 800
 #define SHIP1 "img/arwing2.png"
