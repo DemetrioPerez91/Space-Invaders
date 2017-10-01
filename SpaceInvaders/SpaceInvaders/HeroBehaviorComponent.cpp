@@ -11,7 +11,19 @@
 void HeroBehaviorComponent::update()
 {
     if (InputManager::controller.back) {
-        printf("Moving Back");
-        this->y+=10;
+        printf("Moving Back\n");
+        this->y+=speed;
+    }
+    if (InputManager::controller.forward){
+        printf("Moving forward\n");
+        this->y-=speed;
+    }
+    if(InputManager::controller.right)
+    {
+        this->x+=speed;
+    }
+    if(InputManager::controller.left)
+    {
+        this->x-=speed;
     }
 }

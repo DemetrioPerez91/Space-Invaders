@@ -22,6 +22,7 @@ public:
     }
     void start(){}
     void update();
+    int speed = 10;
 };
 
 
