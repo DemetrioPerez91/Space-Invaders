@@ -24,10 +24,9 @@ void SDLManagerComponent::start(){
         {
             if(createRenderer())
             {
-                if(createScreen())
-                {
+                
                     printf("SDL successfully initiated!\n");
-                }
+                
             }
         }
     }
@@ -91,28 +90,19 @@ bool SDLManagerComponent::createRenderer()
     return success;
 }
 
-bool SDLManagerComponent::createScreen()
-{
-    bool success = true;
-    screen = SDL_GetWindowSurface(window);
-    if (screen == NULL)
-    {
-        printf("SDL ERROR %s \n", SDL_GetError());
-        success = false;
-        return success;
-    }
-    return success;
-}
 
+//Present renderer
 void SDLManagerComponent::present()
 {
     SDL_RenderPresent(renderer);
 }
+
+//Clean renderer
 void SDLManagerComponent::clear()
 {
     SDL_RenderClear(renderer);
 }
-
+// Add texture to renderer
 void SDLManagerComponent::addTexture(SDL_Texture  * texture,SDL_Rect * srcRect,SDL_Rect * destRect)
 {
     SDL_RenderCopy(renderer, texture, srcRect,destRect);

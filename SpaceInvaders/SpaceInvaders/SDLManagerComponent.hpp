@@ -38,7 +38,6 @@ public:
     //Initializaiton Methods
     static bool createWindow();
     static bool createRenderer();
-    static bool createScreen();
     static bool initSDL();
     
     
