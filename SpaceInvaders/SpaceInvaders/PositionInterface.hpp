@@ -17,8 +17,10 @@ class PositionInterface
 public:
     float x;
     float y;
+    
     void updatePostion(float x, float y);
     virtual std::tuple<float,float> getPosition();
+    void startPosition(float x, float y);
 };
 
 #endif /* PositionInterface_hpp */

@@ -8,11 +8,7 @@
 
 #include "HeroBehaviorComponent.hpp"
 
-void HeroBehaviorComponent::start()
-{
-    this->x = startX;
-    this->y = startY;
-}
+
 
 void HeroBehaviorComponent::update()
 {
