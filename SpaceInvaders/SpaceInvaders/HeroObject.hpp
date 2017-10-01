@@ -11,9 +11,19 @@
 
 #include <stdio.h>
 #include "GameObject.hpp"
+#include "SpriteComponent.hpp"
+#include "HeroBehaviorComponent.hpp"
 class HeroObject: public GameObject
 {
-    
+public:
+    HeroObject()
+    {
+        SpriteComponent * sprite = new SpriteComponent("img/arwing.png",55,39);
+        HeroBehaviorComponent * heroBehavior = new HeroBehaviorComponent();
+        this->components.push_back(sprite);
+        this->components.push_back(heroBehavior);   
+    }
+    void update();
 };
 
 
