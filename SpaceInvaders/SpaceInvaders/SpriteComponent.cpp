@@ -29,6 +29,4 @@ void SpriteComponent::updateDest()
     dest->w = width;
     dest->x = x;
     dest->y = y;
-    
-    printf("My x position is: %d",dest->x);
 }

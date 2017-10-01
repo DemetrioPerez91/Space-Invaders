@@ -37,7 +37,6 @@ int test()
     
     float x = 0.0;
     test->components.push_back(new SpriteComponent());
-    test->components.push_back(new MesageComponent("I love you"));
     while (true)
     {
         x++;
