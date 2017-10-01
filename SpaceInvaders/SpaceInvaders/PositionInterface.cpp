@@ -12,3 +12,8 @@ void PositionInterface::updatePostion(float x, float y)
     this->x = x;
     this->y = y;
 }
+
+std::tuple<float,float> PositionInterface::getPosition()
+{
+    return {this->x,this->y };
+}

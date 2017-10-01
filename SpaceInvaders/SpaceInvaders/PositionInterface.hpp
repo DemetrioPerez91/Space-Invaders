@@ -10,13 +10,15 @@
 #define PositionInterface_hpp
 
 #include <stdio.h>
+#include <Tuple>
+
 class PositionInterface
 {
 public:
     float x;
     float y;
     void updatePostion(float x, float y);
-    
+    virtual std::tuple<float,float> getPosition();
 };
 
 #endif /* PositionInterface_hpp */
