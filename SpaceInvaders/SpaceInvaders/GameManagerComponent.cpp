@@ -34,9 +34,10 @@ void GameManagerComponent::update()
     bg->update();
     hero->update();
     bullet->update();
+    
     for(int i = 0; i < enemies.size(); i++)
     {
         enemies.at(i)->update();
     }
-    
+    FPSMonitor::calculateFramerATE();
 }

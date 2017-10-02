@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0216141F82BAB3003E45E8 /* FPSMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0216121F82BAB3003E45E8 /* FPSMonitor.cpp */; };
 		CE1B2E7C1F7F3BA5007A91B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */; };
 		CE1B2E841F7F3C23007A91B3 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E831F7F3C23007A91B3 /* libSDL2-2.0.0.dylib */; };
 		CE1B2E861F7F3C31007A91B3 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E851F7F3C31007A91B3 /* libSDL2_image-2.0.0.dylib */; };
@@ -44,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE0216121F82BAB3003E45E8 /* FPSMonitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FPSMonitor.cpp; sourceTree = "<group>"; };
+		CE0216131F82BAB3003E45E8 /* FPSMonitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FPSMonitor.hpp; sourceTree = "<group>"; };
 		CE1B2E781F7F3BA5007A91B3 /* SpaceInvaders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaceInvaders; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CE1B2E831F7F3C23007A91B3 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2/2.0.6/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0216151F82BAB8003E45E8 /* FPSMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				CE0216121F82BAB3003E45E8 /* FPSMonitor.cpp */,
+				CE0216131F82BAB3003E45E8 /* FPSMonitor.hpp */,
+			);
+			name = FPSMonitor;
+			sourceTree = "<group>";
+		};
 		CE1B2E6F1F7F3BA5007A91B3 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +269,7 @@
 		CE1B2EBB1F8033C4007A91B3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				CE0216151F82BAB8003E45E8 /* FPSMonitor */,
 				CE1B2EB51F802EFA007A91B3 /* GameManagerComponent */,
 				CE1B2EBA1F8031D6007A91B3 /* SDLManagerCOmponent */,
 				CEF3C4BF1F80945A002F2ABD /* InputManager */,
@@ -435,6 +448,7 @@
 				CE1B2EB11F802C1B007A91B3 /* SpriteComponent.cpp in Sources */,
 				CE1B2EB41F802EF5007A91B3 /* GameManagerComponent.cpp in Sources */,
 				CE1B2EA21F801C66007A91B3 /* MessageComponent.cpp in Sources */,
+				CE0216141F82BAB3003E45E8 /* FPSMonitor.cpp in Sources */,
 				CEF3C4D31F812A9C002F2ABD /* EnemyBehaviorComponent.cpp in Sources */,
 				CEF3C4CB1F80AEC4002F2ABD /* EnemyObject.cpp in Sources */,
 				CEF3C4B61F807D53002F2ABD /* TransformComponent.cpp in Sources */,
