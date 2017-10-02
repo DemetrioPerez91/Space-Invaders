@@ -18,7 +18,7 @@ class BulletObject:public GameObject
 public:
     BulletObject(float x, float y)
     {
-        components.push_back(new SpriteComponent("img/laser.png",x,y));
+        components.push_back(new SpriteComponent("img/laser.png",x,y,this));
         
     }
     

@@ -16,10 +16,11 @@
 class SpriteComponent:public GameComponent, public PositionInterface
 {
 public:
-    SpriteComponent(std::string resourceURL,int width, int height){
+    SpriteComponent(std::string resourceURL,int width, int height,GameObject *owner){
         this->resourceURL = resourceURL;
         this->height = height;
         this->width = width;
+        this->owner = owner;
         start();
     }
     std::string resourceURL = "";

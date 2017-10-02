@@ -172,8 +172,8 @@
 				CE1B2EAB1F8024AB007A91B3 /* MessageComponent */,
 				CE1B2EB61F802F0A007A91B3 /* SpriteComponent */,
 				CEF3C4B71F807D59002F2ABD /* TransformComponent */,
-				CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */,
 				CEF3C4D41F812AAA002F2ABD /* EnemyBehaviorComponent */,
+				CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */,
 			);
 			name = GameComponents;
 			sourceTree = "<group>";

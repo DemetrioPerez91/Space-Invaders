@@ -18,7 +18,7 @@ class BackgroundObject: public GameObject
 public:
     BackgroundObject()
     {
-        components.push_back(new SpriteComponent("img/bg.png",700,700));
+        components.push_back(new SpriteComponent("img/bg.png",700,700,this));
     }
 };
 
