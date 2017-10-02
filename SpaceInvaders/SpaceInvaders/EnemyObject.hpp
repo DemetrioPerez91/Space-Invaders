@@ -18,7 +18,7 @@ class EnemyObject: public GameObject
 public:
     EnemyObject(float x, float y)
     {
-        SpriteComponent * sprite = new SpriteComponent("img/alien2.png",34,60);
+        SpriteComponent * sprite = new SpriteComponent("img/ALIEN.png",1600,1600);
         EnemyBehaviorComponent * enemyBehavior = new EnemyBehaviorComponent(x,y);
         this->components.push_back(sprite);
         this->components.push_back(enemyBehavior);
