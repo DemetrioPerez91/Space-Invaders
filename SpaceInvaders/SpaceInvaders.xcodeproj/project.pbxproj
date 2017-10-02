@@ -28,6 +28,7 @@
 		CEF3C4CF1F80B6BF002F2ABD /* BackgroundObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4CD1F80B6BF002F2ABD /* BackgroundObject.cpp */; };
 		CEF3C4D31F812A9C002F2ABD /* EnemyBehaviorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4D11F812A9C002F2ABD /* EnemyBehaviorComponent.cpp */; };
 		CEF3C4D81F814A3F002F2ABD /* BulletObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4D61F814A3F002F2ABD /* BulletObject.cpp */; };
+		CEF3C4DC1F81C81A002F2ABD /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C4DA1F81C81A002F2ABD /* AudioManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,8 +51,6 @@
 		CE1B2E871F7F3C42007A91B3 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2_mixer/2.0.1_1/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
 		CE1B2E891F7F3C53007A91B3 /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2_ttf/2.0.14/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
 		CE1B2E8B1F7F3C68007A91B3 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
-		CE1B2E931F7F3D5A007A91B3 /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
-		CE1B2E941F7F3D5A007A91B3 /* alien2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien2.png; sourceTree = "<group>"; };
 		CE1B2E951F7F3D5A007A91B3 /* arwing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arwing.png; sourceTree = "<group>"; };
 		CE1B2E961F7F3D5A007A91B3 /* arwing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arwing2.png; sourceTree = "<group>"; };
 		CE1B2E971F7F3D5A007A91B3 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -90,6 +89,9 @@
 		CEF3C4D51F814A1E002F2ABD /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
 		CEF3C4D61F814A3F002F2ABD /* BulletObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletObject.cpp; sourceTree = "<group>"; };
 		CEF3C4D71F814A3F002F2ABD /* BulletObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BulletObject.hpp; sourceTree = "<group>"; };
+		CEF3C4DA1F81C81A002F2ABD /* AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioManager.cpp; sourceTree = "<group>"; };
+		CEF3C4DB1F81C81A002F2ABD /* AudioManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioManager.hpp; sourceTree = "<group>"; };
+		CEF3C4DE1F829AC8002F2ABD /* ALIEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ALIEN.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF3C4D51F814A1E002F2ABD /* laser.png */,
-				CE1B2E931F7F3D5A007A91B3 /* alien.png */,
-				CE1B2E941F7F3D5A007A91B3 /* alien2.png */,
 				CE1B2E951F7F3D5A007A91B3 /* arwing.png */,
+				CEF3C4DE1F829AC8002F2ABD /* ALIEN.png */,
 				CE1B2E961F7F3D5A007A91B3 /* arwing2.png */,
 				CE1B2E971F7F3D5A007A91B3 /* bg.png */,
 				CE1B2E981F7F3D5A007A91B3 /* expectations.png */,
@@ -259,6 +260,7 @@
 				CE1B2EB51F802EFA007A91B3 /* GameManagerComponent */,
 				CE1B2EBA1F8031D6007A91B3 /* SDLManagerCOmponent */,
 				CEF3C4BF1F80945A002F2ABD /* InputManager */,
+				CEF3C4DD1F81C81F002F2ABD /* AudioManager */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -352,6 +354,15 @@
 			name = BulletObject;
 			sourceTree = "<group>";
 		};
+		CEF3C4DD1F81C81F002F2ABD /* AudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3C4DA1F81C81A002F2ABD /* AudioManager.cpp */,
+				CEF3C4DB1F81C81A002F2ABD /* AudioManager.hpp */,
+			);
+			name = AudioManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF3C4DC1F81C81A002F2ABD /* AudioManager.cpp in Sources */,
 				CE1B2EA51F801D77007A91B3 /* Matt.cpp in Sources */,
 				CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */,
 				CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */,
