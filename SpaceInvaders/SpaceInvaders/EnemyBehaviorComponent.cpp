@@ -8,6 +8,12 @@
 
 #include "EnemyBehaviorComponent.hpp"
 
+
+void EnemyBehaviorComponent::start()
+{
+
+}
+
 void EnemyBehaviorComponent::update()
 {
     move();
@@ -44,7 +50,7 @@ void EnemyBehaviorComponent::move()
 
 void EnemyBehaviorComponent::checkPosition()
 {
-    if( positionX >= 500 && moveFlag == RIGHT)
+    if( positionX >= (SCREEN_W-width) && moveFlag == RIGHT)
     {
         moveFlag = DOWN;
     }

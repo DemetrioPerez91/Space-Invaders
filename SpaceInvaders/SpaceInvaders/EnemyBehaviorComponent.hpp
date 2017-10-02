@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "GameComponent.h"
+#include "SpriteComponent.hpp"
 
 enum MoveFlag
 {
@@ -20,14 +21,16 @@ enum MoveFlag
 class EnemyBehaviorComponent: public GameComponent, public PositionInterface
 {
 public:
-    EnemyBehaviorComponent(float x, float y)
+    EnemyBehaviorComponent(float x, float y,GameObject * owner)
     {
         startPosition(x, y);
+        this->owner = owner;
+        
     }
     int verticalSpeed = 60;
     int horizontalSpeed = 1;
-    
-    void start(){}
+    int width = 60;
+    void start();
     MoveFlag nextDirection = RIGHT;
     MoveFlag moveFlag = LEFT;
     void update();
