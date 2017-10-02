@@ -14,7 +14,7 @@
 
 #include "GameComponent.h"
 #include "PositionInterface.hpp"
-
+class GameComponent;
 class GameObject
 {
 public:
