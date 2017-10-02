@@ -10,5 +10,46 @@
 
 void EnemyBehaviorComponent::update()
 {
-    this->positionX += 1;
+    move();
+    checkPosition();
+}
+
+void EnemyBehaviorComponent::move()
+{
+    switch (moveFlag) {
+        case RIGHT:
+            positionX += horizontalSpeed;
+            break;
+        case LEFT:
+            positionX -= horizontalSpeed;
+            break;
+        case DOWN:
+            positionY += verticalSpeed;
+            if(nextDirection == RIGHT)
+            {
+                nextDirection = LEFT;
+                moveFlag = RIGHT;
+            }
+            else
+            {
+                nextDirection = RIGHT;
+                moveFlag = LEFT;
+            }
+            break;
+        default:
+            break;
+    }
+    checkPosition();
+}
+
+void EnemyBehaviorComponent::checkPosition()
+{
+    if( positionX >= 500 && moveFlag == RIGHT)
+    {
+        moveFlag = DOWN;
+    }
+    else if (positionX <= 0 && moveFlag == LEFT)
+    {
+        moveFlag = DOWN;
+    }
 }

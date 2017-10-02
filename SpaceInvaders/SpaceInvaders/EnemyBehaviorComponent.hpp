@@ -12,6 +12,10 @@
 #include <stdio.h>
 #include "GameComponent.h"
 
+enum MoveFlag
+{
+    LEFT,RIGHT,DOWN
+};
 
 class EnemyBehaviorComponent: public GameComponent, public PositionInterface
 {
@@ -20,8 +24,17 @@ public:
     {
         startPosition(x, y);
     }
+    int verticalSpeed = 60;
+    int horizontalSpeed = 1;
+    
     void start(){}
+    MoveFlag nextDirection = RIGHT;
+    MoveFlag moveFlag = LEFT;
     void update();
+    void move();
+    void checkPosition();
+    void setFlag();
+    
 };
 
 
