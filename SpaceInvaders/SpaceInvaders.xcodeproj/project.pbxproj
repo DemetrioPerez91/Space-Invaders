@@ -155,12 +155,12 @@
 			children = (
 				CE1B2E8B1F7F3C68007A91B3 /* defines.h */,
 				CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */,
-				CE1B2E921F7F3D5A007A91B3 /* img */,
 				CE0216191F83085A003E45E8 /* TimmerWrapper */,
 				CEF3C4C81F80AE8D002F2ABD /* Interfaces */,
 				CE1B2EBB1F8033C4007A91B3 /* Singletons */,
 				CE1B2EAA1F8024A3007A91B3 /* GameObjects */,
 				CE1B2EA91F802490007A91B3 /* GameComponents */,
+				CE1B2E921F7F3D5A007A91B3 /* img */,
 			);
 			path = SpaceInvaders;
 			sourceTree = "<group>";
