@@ -31,8 +31,10 @@ public:
     int horizontalSpeed = 1;
     int width = 60;
     void start();
-    MoveFlag nextDirection = RIGHT;
-    MoveFlag moveFlag = LEFT;
+    MoveFlag rutine[4]={RIGHT,DOWN,LEFT,DOWN};
+    
+    int rutineStep = 0;
+    
     void update();
     void move();
     void checkPosition();

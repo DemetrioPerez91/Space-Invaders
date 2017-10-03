@@ -22,7 +22,7 @@ void EnemyBehaviorComponent::update()
 
 void EnemyBehaviorComponent::move()
 {
-    switch (moveFlag) {
+    switch (rutine[rutineStep]) {
         case RIGHT:
             positionX += horizontalSpeed;
             break;
@@ -31,16 +31,7 @@ void EnemyBehaviorComponent::move()
             break;
         case DOWN:
             positionY += verticalSpeed;
-            if(nextDirection == RIGHT)
-            {
-                nextDirection = LEFT;
-                moveFlag = RIGHT;
-            }
-            else
-            {
-                nextDirection = RIGHT;
-                moveFlag = LEFT;
-            }
+            rutineStep++;
             break;
         default:
             break;
@@ -50,12 +41,15 @@ void EnemyBehaviorComponent::move()
 
 void EnemyBehaviorComponent::checkPosition()
 {
-    if( positionX >= (SCREEN_W-width) && moveFlag == RIGHT)
+    if( positionX >= (SCREEN_W-width) && rutine[rutineStep] == RIGHT)
     {
-        moveFlag = DOWN;
+        rutineStep++;
     }
-    else if (positionX <= 0 && moveFlag == LEFT)
+    else if (positionX <= 0 && rutine[rutineStep] == LEFT)
     {
-        moveFlag = DOWN;
+        rutineStep++;
     }
+    if(rutineStep>4){rutineStep = 0;}
+    
+    
 }
