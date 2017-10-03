@@ -13,6 +13,7 @@
 #include "InputManager.hpp"
 #include "GameComponent.h"
 
+//Behavior for hero object
 class HeroBehaviorComponent: public GameComponent, public PositionInterface
 {
 public:

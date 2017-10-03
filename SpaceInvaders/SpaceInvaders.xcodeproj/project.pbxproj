@@ -146,8 +146,8 @@
 		CE1AD8861F8328FB00288045 /* TextComponent */ = {
 			isa = PBXGroup;
 			children = (
-				CE1AD8831F8328EE00288045 /* TextComponent.cpp */,
 				CE1AD8841F8328EE00288045 /* TextComponent.hpp */,
+				CE1AD8831F8328EE00288045 /* TextComponent.cpp */,
 			);
 			name = TextComponent;
 			sourceTree = "<group>";
@@ -339,8 +339,8 @@
 		CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */ = {
 			isa = PBXGroup;
 			children = (
-				CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */,
 				CEF3C4C11F809CDB002F2ABD /* HeroBehaviorComponent.hpp */,
+				CEF3C4C01F809CDB002F2ABD /* HeroBehaviorComponent.cpp */,
 			);
 			name = HeroBehaviorComponent;
 			sourceTree = "<group>";
