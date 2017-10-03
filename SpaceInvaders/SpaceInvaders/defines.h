@@ -12,9 +12,8 @@
 #include<SDL2/SDL_timer.h>
 #define SCREEN_W 700
 #define SCREEN_H 700
-#define SHIP1 "img/arwing2.png"
-#define ALIEN "img/alien2.png"
-#define TITLE_SCREEM "img/title.png"
+
+#define FONT "bleach.ttf"
 
 
 #endif // DEFINES_H_INCLUDED
