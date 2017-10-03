@@ -39,5 +39,5 @@ void GameManagerComponent::update()
     {
         enemies.at(i)->update();
     }
-    FPSMonitor::calculateFramerATE();
+     
 }

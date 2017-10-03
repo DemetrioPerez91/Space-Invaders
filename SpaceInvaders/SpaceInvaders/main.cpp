@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "GameManagerComponent.hpp"
+#include "FPSMonitor.hpp"
 #include "SDLManagerComponent.hpp"
 #include "InputManager.hpp"
 
@@ -37,6 +38,7 @@ int test()
         InputManager::update();
         GameManagerComponent::update();
         SDLManagerComponent::present();
+        FPSMonitor::calculateFramerATE();
         
     }
     return 0;
