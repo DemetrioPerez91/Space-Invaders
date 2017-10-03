@@ -49,7 +49,7 @@ void EnemyBehaviorComponent::checkPosition()
     {
         rutineStep++;
     }
-    if(rutineStep>4){rutineStep = 0;}
+    if(rutineStep>3){rutineStep = 0;}
     
     
 }
