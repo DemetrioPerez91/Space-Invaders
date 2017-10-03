@@ -26,6 +26,7 @@ void HeroObject::update()
             positionComponent->updatePostion(x, y);
         }
         component->update();
+        component = NULL;
         first++;
     }
 }

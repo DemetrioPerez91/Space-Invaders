@@ -28,6 +28,7 @@ void EnemyObject::update()
         }
         
         component->update();
+        component = NULL;
         first++;
     }
 }

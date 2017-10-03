@@ -24,6 +24,7 @@ public:
         
         this->components.push_back(sprite);
         this->components.push_back(enemyBehavior);
+        
     }
     void update();
 };

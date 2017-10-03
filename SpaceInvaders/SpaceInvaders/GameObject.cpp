@@ -16,6 +16,7 @@ void GameObject::update()
     {
         GameComponent * component = components.at(first);
         component->update();
+        component = NULL;
         first++;
     }
 }
