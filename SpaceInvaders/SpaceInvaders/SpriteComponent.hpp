@@ -13,6 +13,8 @@
 #include "GameComponent.h"
 #include "SDLManagerComponent.hpp"
 
+
+//Component that helps create a sprite texture for any Game Object
 class SpriteComponent:public GameComponent, public PositionInterface
 {
 public:
@@ -23,16 +25,27 @@ public:
         this->owner = owner;
         start();
     }
+    
     std::string resourceURL = "";
+    //Rectangles necessary for rendering
     SDL_Rect * dest = NULL;
     SDL_Rect * src = NULL;
+    //Sprite dimensions
     int width;
     int height;
-    SDL_Texture * textTure = NULL;
-    SDL_Renderer * renderer = NULL;
+    
+    SDL_Texture * textTure = NULL; //Texture unique to this object
+    SDL_Renderer * renderer = NULL;//Renderer from SDLManager
+    
+    //Parent class methods
     void start();
     void update();
+    
+    //Adjust the dimensions of the object to those specified in the arguments
     void changeDimensions(int  w, int h);
+    
+    //Move the sprite by updating the position
+    //of the destinations rectangle of its texture
     void updateDest();
     
 };

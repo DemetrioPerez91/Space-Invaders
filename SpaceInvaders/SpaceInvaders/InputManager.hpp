@@ -21,6 +21,9 @@ struct Controller
     bool right = false;
 };
 
+
+//Static class that monitors the input the user
+//provides during the game's lifecycle
 class InputManager
 {
 public:

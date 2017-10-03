@@ -5,6 +5,7 @@
 //  Created by User on 10/2/17.
 //  Copyright © 2017 DemetrioPerez. All rights reserved.
 //
+//This class is meant to be a facade for the SDL Timer class
 
 #ifndef TimmerWrapper_hpp
 #define TimmerWrapper_hpp

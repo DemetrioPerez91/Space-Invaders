@@ -14,7 +14,9 @@
 
 #include "GameComponent.h"
 #include "PositionInterface.hpp"
-class GameComponent;
+
+//Base class for all game objects.
+class GameComponent;//Add this declaration to prevent circular dependency
 class GameObject
 {
 public:
@@ -26,7 +28,8 @@ public:
     std::string tag = "";
     std::vector<GameComponent*> components;
     bool active = false;
-    
+    //Query the game object's component's vector to get the one of the specified type.
+
     template<class Type>
     Type* getComponent()
     {

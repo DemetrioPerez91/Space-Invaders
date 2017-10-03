@@ -13,6 +13,8 @@
 #include "GameObject.hpp"
 #include "SpriteComponent.hpp"
 #include "HeroBehaviorComponent.hpp"
+
+//Player's main character capable of moving and shooting.
 class HeroObject: public GameObject
 {
 public:

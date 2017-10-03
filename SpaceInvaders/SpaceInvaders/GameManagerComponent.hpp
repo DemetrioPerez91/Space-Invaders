@@ -22,6 +22,9 @@
 #include "EnemyObject.hpp"
 #include "BackgroundObject.cpp"
 
+
+//Static class that sets up the
+//game and it's update cycle.
 class GameManagerComponent
 {
 public:

@@ -13,6 +13,8 @@
 #include "GameObject.hpp"
 #include "SpriteComponent.hpp"
 #include "EnemyBehaviorComponent.hpp"
+
+//Basic enemy cass
 class EnemyObject: public GameObject
 {
 public:
@@ -20,11 +22,8 @@ public:
     {
         SpriteComponent * sprite = new SpriteComponent("img/ALIEN.png",1600,1600,this);
         EnemyBehaviorComponent * enemyBehavior = new EnemyBehaviorComponent(x,y,this);
-        
-        
         this->components.push_back(sprite);
         this->components.push_back(enemyBehavior);
-        
     }
     void update();
 };

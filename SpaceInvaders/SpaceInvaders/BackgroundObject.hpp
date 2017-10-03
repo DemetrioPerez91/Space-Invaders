@@ -13,6 +13,7 @@
 #include "GameObject.hpp"
 #include "SpriteComponent.hpp"
 
+//Basic background texture object
 class BackgroundObject: public GameObject
 {
 public:

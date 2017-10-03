@@ -13,7 +13,8 @@
 #include "defines.h"
 #include "GameComponent.h"
 
-
+//Static class that wraps basic functions
+//from SDL and texture building
 class SDLManagerComponent
 {
 public:

@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <Tuple>
 
+//This is meant to enable gamee objects to know where they are
 class PositionInterface
 {
 public:

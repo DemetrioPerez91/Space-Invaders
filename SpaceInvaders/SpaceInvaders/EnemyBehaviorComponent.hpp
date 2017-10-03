@@ -18,6 +18,7 @@ enum MoveFlag
     LEFT,RIGHT,DOWN
 };
 
+//Class that controlls the way the enemy behaves.
 class EnemyBehaviorComponent: public GameComponent, public PositionInterface
 {
 public:
@@ -29,7 +30,7 @@ public:
     }
     int verticalSpeed = 60;
     int horizontalSpeed = 1;
-    int width = 60;
+    int width = 60;//Width of te sprite, used for calculatins
     void start();
     MoveFlag rutine[4]={RIGHT,DOWN,LEFT,DOWN};
     
