@@ -24,8 +24,9 @@ void SDLManagerComponent::start(){
         {
             if(createRenderer())
             {
-                
+                if(initiateTFF()){
                     printf("SDL successfully initiated!\n");
+                }
                 
             }
         }
@@ -66,6 +67,20 @@ bool SDLManagerComponent::createWindow()
     }
     return success;
 }
+
+bool SDLManagerComponent::initiateTFF()
+{
+    bool success = true;
+    //Initialize SDL_ttf
+    if( TTF_Init() == -1 )
+    {
+        printf( "SDL_ttf could not initialize! SDL_ttf Error: %s\n", TTF_GetError() );
+        success = false;
+    }
+    return  success;
+}
+
+
 
 bool SDLManagerComponent::createRenderer()
 {
