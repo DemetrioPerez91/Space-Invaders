@@ -12,40 +12,21 @@
 Uint32 FPSMonitor::startTime = 0;
 bool FPSMonitor::isTimmerStarted = false;
 int FPSMonitor::frames = 0;
-
-
-void FPSMonitor::startMonitor()
-{
-    isTimmerStarted = true;
-    startTime = SDL_GetTicks();
-}
-
-Uint32 FPSMonitor::getTicks()
-{
-    Uint32 time = 0;
-    if(isTimmerStarted)
-    {
-        time = SDL_GetTicks() - startTime;
-    }
-    else
-    {
-        startMonitor();
-        time = SDL_GetTicks();
-    }
-    return time;
-}
-
-
+LTimer * FPSMonitor::fpsTimer = NULL;
 
 void FPSMonitor::calculateFramerATE()
 {
-    frames++;
-    float avgFrames = frames/(getTicks()/100.0f);
-    if (avgFrames>2000000)
-    {
-        avgFrames = 0;
+    if(fpsTimer ==NULL){
+        fpsTimer = new LTimer();
+        fpsTimer->start();
     }
-    printf("FPS: %f\n",avgFrames);
+    frames++;
+    float avgFPS = frames / ( fpsTimer->getTicks() / 1000.f );
+    if( avgFPS > 2000000 )
+    {
+        avgFPS = 0;
+    }
+    printf("FPS: %f\n",avgFPS);
 }
 
 

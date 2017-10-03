@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_timer.h>
+#include "TimmerWrapper.hpp"
+
 
 class  FPSMonitor
 {
@@ -18,11 +20,9 @@ public:
     
     static Uint32 startTime;
     static bool isTimmerStarted;
-    static void startMonitor();
-    static Uint32 getTicks();
     static int frames;
-    static void countFrames();
     static void calculateFramerATE();
+    static LTimer * fpsTimer;
 };
 
 
