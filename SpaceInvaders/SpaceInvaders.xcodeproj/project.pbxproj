@@ -17,7 +17,6 @@
 		CE1B2E9C1F801A3A007A91B3 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E9B1F801A3A007A91B3 /* GameComponent.cpp */; };
 		CE1B2E9F1F801ACB007A91B3 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E9D1F801ACB007A91B3 /* GameObject.cpp */; };
 		CE1B2EA21F801C66007A91B3 /* MessageComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EA01F801C66007A91B3 /* MessageComponent.cpp */; };
-		CE1B2EA51F801D77007A91B3 /* Matt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EA31F801D77007A91B3 /* Matt.cpp */; };
 		CE1B2EB11F802C1B007A91B3 /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EAF1F802C1B007A91B3 /* SpriteComponent.cpp */; };
 		CE1B2EB41F802EF5007A91B3 /* GameManagerComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EB21F802EF5007A91B3 /* GameManagerComponent.cpp */; };
 		CE1B2EB91F8031C0007A91B3 /* SDLManagerComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2EB71F8031C0007A91B3 /* SDLManagerComponent.cpp */; };
@@ -68,8 +67,6 @@
 		CE1B2E9E1F801ACB007A91B3 /* GameObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
 		CE1B2EA01F801C66007A91B3 /* MessageComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MessageComponent.cpp; sourceTree = "<group>"; };
 		CE1B2EA11F801C66007A91B3 /* MessageComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MessageComponent.hpp; sourceTree = "<group>"; };
-		CE1B2EA31F801D77007A91B3 /* Matt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matt.cpp; sourceTree = "<group>"; };
-		CE1B2EA41F801D77007A91B3 /* Matt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matt.hpp; sourceTree = "<group>"; };
 		CE1B2EAF1F802C1B007A91B3 /* SpriteComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteComponent.cpp; sourceTree = "<group>"; };
 		CE1B2EB01F802C1B007A91B3 /* SpriteComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpriteComponent.hpp; sourceTree = "<group>"; };
 		CE1B2EB21F802EF5007A91B3 /* GameManagerComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManagerComponent.cpp; sourceTree = "<group>"; };
@@ -207,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				CE1B2EAD1F80260D007A91B3 /* GameObject */,
-				CE1B2EAC1F8025CE007A91B3 /* Matt */,
 				CEF3C4C71F80A6CD002F2ABD /* HeroObbject */,
 				CEF3C4CC1F80AF13002F2ABD /* EnemyObject */,
 				CEF3C4D01F80B6CE002F2ABD /* BackgroundObject */,
@@ -223,15 +219,6 @@
 				CE1B2EA11F801C66007A91B3 /* MessageComponent.hpp */,
 			);
 			name = MessageComponent;
-			sourceTree = "<group>";
-		};
-		CE1B2EAC1F8025CE007A91B3 /* Matt */ = {
-			isa = PBXGroup;
-			children = (
-				CE1B2EA31F801D77007A91B3 /* Matt.cpp */,
-				CE1B2EA41F801D77007A91B3 /* Matt.hpp */,
-			);
-			name = Matt;
 			sourceTree = "<group>";
 		};
 		CE1B2EAD1F80260D007A91B3 /* GameObject */ = {
@@ -448,7 +435,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF3C4DC1F81C81A002F2ABD /* AudioManager.cpp in Sources */,
-				CE1B2EA51F801D77007A91B3 /* Matt.cpp in Sources */,
 				CEF3C4C61F80A6C8002F2ABD /* HeroObject.cpp in Sources */,
 				CEF3C4BE1F8092C3002F2ABD /* InputManager.cpp in Sources */,
 				CEF3C4D81F814A3F002F2ABD /* BulletObject.cpp in Sources */,
