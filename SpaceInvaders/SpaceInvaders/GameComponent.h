@@ -13,18 +13,12 @@
 #include "PositionInterface.hpp"
 
 class GameObject;
-enum ComponentType
-{
-    Message,
-    Behavior
-};
-
 class GameComponent
 {
 public:
     GameComponent();
     
-    ComponentType type;
+    
     virtual ~GameComponent(){}
     virtual void start();
     virtual void update();
