@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "GameComponent.h"
-#include "SDLManagerComponent.hpp"
+#include "TextureFactory.hpp"
 
 
 //Component that helps create a sprite texture for any Game Object

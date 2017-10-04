@@ -26,7 +26,7 @@ void SpriteComponent::start()
 void SpriteComponent::update()
 {
     updateDest();
-    SDLManagerComponent::addTexture(textTure, src, dest);
+    TextureFactory::addTexture(textTure, src, dest);
 }
 
 void SpriteComponent::updateDest()

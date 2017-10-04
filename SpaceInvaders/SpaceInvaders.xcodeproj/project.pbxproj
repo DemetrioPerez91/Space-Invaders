@@ -11,6 +11,7 @@
 		CE0216181F830852003E45E8 /* TimmerWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0216161F830852003E45E8 /* TimmerWrapper.cpp */; };
 		CE1AD8811F83289500288045 /* DebugDisplayObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD87F1F83289500288045 /* DebugDisplayObject.cpp */; };
 		CE1AD8851F8328EE00288045 /* TextComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD8831F8328EE00288045 /* TextComponent.cpp */; };
+		CE1AD88C1F851AF500288045 /* TextureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD88A1F851AF500288045 /* TextureFactory.cpp */; };
 		CE1B2E7C1F7F3BA5007A91B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */; };
 		CE1B2E841F7F3C23007A91B3 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E831F7F3C23007A91B3 /* libSDL2-2.0.0.dylib */; };
 		CE1B2E861F7F3C31007A91B3 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2E851F7F3C31007A91B3 /* libSDL2_image-2.0.0.dylib */; };
@@ -55,6 +56,8 @@
 		CE1AD8831F8328EE00288045 /* TextComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextComponent.cpp; sourceTree = "<group>"; };
 		CE1AD8841F8328EE00288045 /* TextComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextComponent.hpp; sourceTree = "<group>"; };
 		CE1AD8881F832A6000288045 /* bleach.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bleach.ttf; sourceTree = "<group>"; };
+		CE1AD88A1F851AF500288045 /* TextureFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureFactory.cpp; sourceTree = "<group>"; };
+		CE1AD88B1F851AF500288045 /* TextureFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextureFactory.hpp; sourceTree = "<group>"; };
 		CE1B2E781F7F3BA5007A91B3 /* SpaceInvaders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaceInvaders; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CE1B2E831F7F3C23007A91B3 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2/2.0.6/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
@@ -169,6 +172,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		CE1AD88D1F851AFA00288045 /* TextureFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AD88B1F851AF500288045 /* TextureFactory.hpp */,
+				CE1AD88A1F851AF500288045 /* TextureFactory.cpp */,
+			);
+			name = TextureFactory;
+			sourceTree = "<group>";
+		};
 		CE1B2E6F1F7F3BA5007A91B3 = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +205,7 @@
 				CE1B2E7B1F7F3BA5007A91B3 /* main.cpp */,
 				CE0216191F83085A003E45E8 /* TimmerWrapper */,
 				CEF3C4C81F80AE8D002F2ABD /* Interfaces */,
-				CE1B2EBB1F8033C4007A91B3 /* Singletons */,
+				CE1B2EBB1F8033C4007A91B3 /* Static Classes */,
 				CE1B2EAA1F8024A3007A91B3 /* GameObjects */,
 				CE1B2EA91F802490007A91B3 /* GameComponents */,
 				CE1AD8891F832A8500288045 /* Resources */,
@@ -297,7 +309,7 @@
 			name = SDLManagerCOmponent;
 			sourceTree = "<group>";
 		};
-		CE1B2EBB1F8033C4007A91B3 /* Singletons */ = {
+		CE1B2EBB1F8033C4007A91B3 /* Static Classes */ = {
 			isa = PBXGroup;
 			children = (
 				CE0216151F82BAB8003E45E8 /* FPSMonitor */,
@@ -305,8 +317,9 @@
 				CE1B2EBA1F8031D6007A91B3 /* SDLManagerCOmponent */,
 				CEF3C4BF1F80945A002F2ABD /* InputManager */,
 				CEF3C4DD1F81C81F002F2ABD /* AudioManager */,
+				CE1AD88D1F851AFA00288045 /* TextureFactory */,
 			);
-			name = Singletons;
+			name = "Static Classes";
 			sourceTree = "<group>";
 		};
 		CEF3C4B71F807D59002F2ABD /* TransformComponent */ = {
@@ -473,6 +486,7 @@
 				CEF3C4CF1F80B6BF002F2ABD /* BackgroundObject.cpp in Sources */,
 				CE1AD8851F8328EE00288045 /* TextComponent.cpp in Sources */,
 				CE1B2E7C1F7F3BA5007A91B3 /* main.cpp in Sources */,
+				CE1AD88C1F851AF500288045 /* TextureFactory.cpp in Sources */,
 				CEF3C4BA1F8081C1002F2ABD /* PositionInterface.cpp in Sources */,
 				CE1B2E9C1F801A3A007A91B3 /* GameComponent.cpp in Sources */,
 				CE1B2E9F1F801ACB007A91B3 /* GameObject.cpp in Sources */,

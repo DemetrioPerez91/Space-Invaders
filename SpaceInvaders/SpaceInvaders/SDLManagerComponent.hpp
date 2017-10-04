@@ -14,8 +14,7 @@
 #include "GameComponent.h"
 
 
-//Static class that wraps basic functions
-//from SDL and texture building
+//Static class that wraps basic initialization
 class SDLManagerComponent
 {
 public:
@@ -26,8 +25,6 @@ public:
     static void start();
     static void clear();
     static void present();
-    static void addTexture(SDL_Texture * texture,SDL_Rect * srcRect,SDL_Rect * destRect);
-    static SDL_Texture * loadTexture( std::string path );
 
     //Initializaiton Methods
     static bool createWindow();
