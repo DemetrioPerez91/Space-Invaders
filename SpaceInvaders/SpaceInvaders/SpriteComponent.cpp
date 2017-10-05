@@ -19,7 +19,7 @@ void SpriteComponent::start()
     dest->w = width;
     src->x = 0;
     src->y = 0;
-    textTure = SDLManagerComponent::loadTexture(resourceURL);
+    textTure = TextureFactory::loadTexture(resourceURL);
     renderer = SDLManagerComponent::renderer;
 }
 
