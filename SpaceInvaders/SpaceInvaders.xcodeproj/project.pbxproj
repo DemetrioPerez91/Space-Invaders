@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE0216141F82BAB3003E45E8 /* FPSMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0216121F82BAB3003E45E8 /* FPSMonitor.cpp */; };
 		CE0216181F830852003E45E8 /* TimmerWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0216161F830852003E45E8 /* TimmerWrapper.cpp */; };
+		CE0397FE1F898525003A224B /* BulletBehaviorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0397FC1F898525003A224B /* BulletBehaviorComponent.cpp */; };
 		CE1AD8811F83289500288045 /* DebugDisplayObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD87F1F83289500288045 /* DebugDisplayObject.cpp */; };
 		CE1AD8851F8328EE00288045 /* TextComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD8831F8328EE00288045 /* TextComponent.cpp */; };
 		CE1AD88C1F851AF500288045 /* TextureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1AD88A1F851AF500288045 /* TextureFactory.cpp */; };
@@ -51,6 +52,9 @@
 		CE0216131F82BAB3003E45E8 /* FPSMonitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FPSMonitor.hpp; sourceTree = "<group>"; };
 		CE0216161F830852003E45E8 /* TimmerWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimmerWrapper.cpp; sourceTree = "<group>"; };
 		CE0216171F830852003E45E8 /* TimmerWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TimmerWrapper.hpp; sourceTree = "<group>"; };
+		CE0397FC1F898525003A224B /* BulletBehaviorComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletBehaviorComponent.cpp; sourceTree = "<group>"; };
+		CE0397FD1F898525003A224B /* BulletBehaviorComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BulletBehaviorComponent.hpp; sourceTree = "<group>"; };
+		CE14DCCB1F8BD2A400108E9F /* ALIEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ALIEN.png; sourceTree = "<group>"; };
 		CE1AD87F1F83289500288045 /* DebugDisplayObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugDisplayObject.cpp; sourceTree = "<group>"; };
 		CE1AD8801F83289500288045 /* DebugDisplayObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DebugDisplayObject.hpp; sourceTree = "<group>"; };
 		CE1AD8831F8328EE00288045 /* TextComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextComponent.cpp; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 		CEF3C4D71F814A3F002F2ABD /* BulletObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BulletObject.hpp; sourceTree = "<group>"; };
 		CEF3C4DA1F81C81A002F2ABD /* AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioManager.cpp; sourceTree = "<group>"; };
 		CEF3C4DB1F81C81A002F2ABD /* AudioManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioManager.hpp; sourceTree = "<group>"; };
-		CEF3C4DE1F829AC8002F2ABD /* ALIEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ALIEN.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,8 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF3C4D51F814A1E002F2ABD /* laser.png */,
+				CE14DCCB1F8BD2A400108E9F /* ALIEN.png */,
 				CE1B2E951F7F3D5A007A91B3 /* arwing.png */,
-				CEF3C4DE1F829AC8002F2ABD /* ALIEN.png */,
 				CE1B2E961F7F3D5A007A91B3 /* arwing2.png */,
 				CE1B2E971F7F3D5A007A91B3 /* bg.png */,
 				CE1B2E981F7F3D5A007A91B3 /* expectations.png */,
@@ -247,6 +250,8 @@
 				CEF3C4D41F812AAA002F2ABD /* EnemyBehaviorComponent */,
 				CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */,
 				CE1AD8861F8328FB00288045 /* TextComponent */,
+				CE0397FC1F898525003A224B /* BulletBehaviorComponent.cpp */,
+				CE0397FD1F898525003A224B /* BulletBehaviorComponent.hpp */,
 			);
 			name = GameComponents;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				CE1AD88C1F851AF500288045 /* TextureFactory.cpp in Sources */,
 				CEF3C4BA1F8081C1002F2ABD /* PositionInterface.cpp in Sources */,
 				CE1B2E9C1F801A3A007A91B3 /* GameComponent.cpp in Sources */,
+				CE0397FE1F898525003A224B /* BulletBehaviorComponent.cpp in Sources */,
 				CE1B2E9F1F801ACB007A91B3 /* GameObject.cpp in Sources */,
 				CE1B2EB11F802C1B007A91B3 /* SpriteComponent.cpp in Sources */,
 				CE1AD8811F83289500288045 /* DebugDisplayObject.cpp in Sources */,
