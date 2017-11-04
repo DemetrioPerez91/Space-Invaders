@@ -55,6 +55,7 @@ void InputManager::update()
                     controller.right = true;
                     break;
                 case SDLK_SPACE:
+                    controller.fire = true;
                     break;
                 case SDLK_m:
                     break;
@@ -88,6 +89,7 @@ void InputManager::update()
                     controller.right = false;
                     break;
                 case SDLK_SPACE:
+                    controller.fire = false;
                     break;
                 case SDLK_m:
                     break;
