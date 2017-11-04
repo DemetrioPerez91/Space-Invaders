@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include "GameComponent.h"
 #include "SDLManagerComponent.hpp"
+#include "TextureFactory.hpp"
+
 
 class TextComponent: public GameComponent
 {
@@ -21,6 +23,7 @@ public:
         this->text = text;
         this->fontURL = fontURL;
         this->owner = owner;
+        start();
     }
     
     

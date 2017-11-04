@@ -7,3 +7,10 @@
 //
 
 #include "TextComponent.hpp"
+
+void TextComponent::start()
+{
+    
+}
+
+void TextComponent::update(){}
