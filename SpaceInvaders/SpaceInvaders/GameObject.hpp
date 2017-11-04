@@ -48,6 +48,7 @@ public:
         }
         return result;
     }
+    void (*functionPointer)(GameObject *);
     
 };
 #endif /* GameObject_hpp */
