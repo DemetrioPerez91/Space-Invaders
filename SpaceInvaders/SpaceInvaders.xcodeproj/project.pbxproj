@@ -250,8 +250,7 @@
 				CEF3C4D41F812AAA002F2ABD /* EnemyBehaviorComponent */,
 				CEF3C4C31F809CE6002F2ABD /* HeroBehaviorComponent */,
 				CE1AD8861F8328FB00288045 /* TextComponent */,
-				CE0397FC1F898525003A224B /* BulletBehaviorComponent.cpp */,
-				CE0397FD1F898525003A224B /* BulletBehaviorComponent.hpp */,
+				CE46150F1FAE810A0050F70B /* BulletBehavior */,
 			);
 			name = GameComponents;
 			sourceTree = "<group>";
@@ -325,6 +324,15 @@
 				CE1AD88D1F851AFA00288045 /* TextureFactory */,
 			);
 			name = "Static Classes";
+			sourceTree = "<group>";
+		};
+		CE46150F1FAE810A0050F70B /* BulletBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				CE0397FC1F898525003A224B /* BulletBehaviorComponent.cpp */,
+				CE0397FD1F898525003A224B /* BulletBehaviorComponent.hpp */,
+			);
+			name = BulletBehavior;
 			sourceTree = "<group>";
 		};
 		CEF3C4B71F807D59002F2ABD /* TransformComponent */ = {

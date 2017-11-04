@@ -11,6 +11,6 @@
 void BulletBehaviorComponent::update()
 {
     this->positionY -= 10;
-    printf("Move \n");
+    //printf("Bullet Move \n");
     
 }
