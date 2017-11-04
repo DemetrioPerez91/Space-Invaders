@@ -16,6 +16,7 @@
 #include "SpriteComponent.hpp"
 #include "HeroObject.hpp"
 #include "InputManager.hpp"
+#include "TimmerWrapper.hpp"
 
 #include "BulletObject.hpp"
 
@@ -34,7 +35,11 @@ public:
     static HeroObject * hero;
     static BulletObject * bullet;
     
+    static std::vector<GameObject*> objects;
+    
     static void setup();
     static void update();
+    static void  addObject(GameObject *);
+    
 };
 #endif /* GameManagerComponent_hpp */

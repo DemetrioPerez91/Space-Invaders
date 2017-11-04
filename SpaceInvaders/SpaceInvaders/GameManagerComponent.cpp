@@ -13,31 +13,41 @@ bool GameManagerComponent::gameOver = false;
 BackgroundObject * GameManagerComponent::bg = NULL;
 HeroObject * GameManagerComponent::hero = NULL;
 BulletObject * GameManagerComponent::bullet = NULL;
+std::vector<GameObject *> GameManagerComponent::objects = std::vector<GameObject*>();
+
 
 void GameManagerComponent::setup()
 {
+    
     bg      = new BackgroundObject();
     hero    = new HeroObject(400,350);
-    bullet  = new BulletObject(128,256);
+    
+    objects.push_back(bg);
+    objects.push_back(hero);
+    bg->functionPointer = &addObject;
+    hero->functionPointer = &addObject;
+    
     for(int i = 0; i<10; i++)
     {
-        enemies.push_back(new EnemyObject(i*50,60));
-        enemies.at(i)->getComponent<SpriteComponent>()->changeDimensions(60, 60);
+        EnemyObject * enemy = new EnemyObject(i*50,60);
+        enemy->getComponent<SpriteComponent>()->changeDimensions(60, 60);
+        objects.push_back(enemy);
     }
-    bullet->getComponent<SpriteComponent>()->changeDimensions(10 , 30);
     
-   
+    
+
 }
 
 void GameManagerComponent::update()
 {
-    bg->update();
-    hero->update();
-    bullet->update();
-    
-    for(int i = 0; i < enemies.size(); i++)
+   
+    for(int i = 0; i < objects.size(); i++)
     {
-        enemies.at(i)->update();
+        objects.at(i)->update();
     }
      
+}
+void  GameManagerComponent::addObject(GameObject * object)
+{
+    objects.push_back(object);
 }
