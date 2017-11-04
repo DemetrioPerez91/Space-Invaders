@@ -23,7 +23,7 @@ public:
         this->x = x;
         this->y = y;
         SpriteComponent * sprite = new SpriteComponent("img/arwing.png",55,39,this);
-        HeroBehaviorComponent * heroBehavior = new HeroBehaviorComponent(x,y);
+        HeroBehaviorComponent * heroBehavior = new HeroBehaviorComponent(x,y,this);
         this->components.push_back(sprite);
         this->components.push_back(heroBehavior);   
     }

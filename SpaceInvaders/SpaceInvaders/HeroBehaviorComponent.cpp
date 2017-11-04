@@ -20,4 +20,24 @@ void HeroBehaviorComponent::update()
     {
         this->positionX-=speed;
     }
+    if (InputManager::controller.fire)
+    {
+        this->fire();
+    }
+}
+void HeroBehaviorComponent::fire()
+{
+    
+    
+    BulletObject * bullet = new BulletObject(positionX,positionY);
+    bullet->getComponent<SpriteComponent>()->startPosition(positionX, positionY);
+    bullet->getComponent<SpriteComponent>()->changeDimensions(10 , 30);
+    
+    if(owner->functionPointer != NULL)
+    {
+        owner->functionPointer(bullet);
+    }
+        
+    
+    
 }

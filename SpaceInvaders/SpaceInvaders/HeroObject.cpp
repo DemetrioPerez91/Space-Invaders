@@ -29,4 +29,5 @@ void HeroObject::update()
         component = NULL;
         first++;
     }
+    
 }
